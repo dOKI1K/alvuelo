@@ -2,14 +2,14 @@ import { BiLogoFacebookCircle, BiLogoGithub, BiLogoLinkedin, BiLogoInstagram } f
 // import { motion } from "motion/react"
 
 interface FooterProps {
-    children?: React.ReactNode;
+    // children?: React.ReactNode;
     year?: number;
 }
 
-export default function Footer({ children, year }: FooterProps) {
+export default function Footer({ year }: FooterProps) {
     return (
         <footer className="w-full mt-10 bg-white font-poppins">
-            <div className="container grid items-center grid-cols-1 gap-10 pt-10 mx-auto md:grid-cols-2 px-7 md:px-0 pb-28">
+            <div className="container grid items-center grid-cols-1 gap-10 px-4 pt-10 mx-auto md:grid-cols-2 lg:px-0 pb-28">
                 <div className="flex flex-col items-start gap-y-5">
                     <h1 className="text-3xl font-bold">Logo</h1>
                     <p className="text-sm text-gray-500">Proveemos soluciones integrales de importación, garantizando rapidez,
@@ -37,12 +37,9 @@ export default function Footer({ children, year }: FooterProps) {
                             <BiLogoInstagram size={40} />
                         </a>
                     </div>
-                    <div>
-                        {children}
-                    </div>
                 </div>
             </div>
-            <div className="py-2 text-white bg-gray-800 cursor-default flex flex-col mx-auto text-xs md:flex-row w-full gap-x-1 justify-center">
+            <div className="flex flex-col justify-center w-full py-2 mx-auto text-xs text-center text-white bg-gray-800 cursor-default sm:flex-row gap-x-1">
                 <p>Designed by <a href=""
                     className="cursor-pointer hover:text-secondary">dOKI</a>
                 </p>
