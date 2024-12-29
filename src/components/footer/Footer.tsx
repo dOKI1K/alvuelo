@@ -17,7 +17,7 @@ export default function Footer({ year }: FooterProps) {
                         de Argentina.</p>
                 </div>
 
-                <div className="flex flex-col text-center gap-y-5 xl:mx-auto ">
+                <div className="flex flex-col mx-auto text-center gap-y-5 ">
                     <a href="mailto:brand@mail.com" className="text-sm text-gray-500">brand@mail.com</a>
                     <div className="flex flex-row">
                         <a href="#" target="_blank"
