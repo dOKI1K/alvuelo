@@ -32,9 +32,9 @@ export default function FormTextarea({ label, name, placeholder, value }: Textar
             <Label htmlFor={name}>{label}</Label>
             <Textarea
                 className={!isValid ? (
-                    "border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20"
+                    "border-slate-500 border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20"
                 ) : (
-                    "border-gray-300 focus-visible:border-primary focus-visible:ring-primary/20"
+                    "border-slate-500 focus-visible:border-primary focus-visible:ring-primary/20"
                 )}
                 placeholder={placeholder}
                 defaultValue={message}
