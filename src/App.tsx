@@ -9,13 +9,13 @@ function App() {
     // const [date, setDate] = useState<Date | undefined>(new Date())
 
     return (
-        <div className="bg-white">
+        <div className="bg-gradient-to-r from-slate-800 to-slate-500">
             <div className='w-full'>
                 <Header />
 
                 <Body />
 
-                <ContactForm color='bg-orange-500' />
+                <ContactForm />
 
                 <Footer year={new Date().getFullYear()} />
             </div>
