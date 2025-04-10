@@ -13,16 +13,17 @@ interface TextareaProps {
 export default function FormTextarea({ label, name, placeholder, value }: TextareaProps) {
 
     const [message, setMessage] = useState(value);
+    const [customValidity, setCustomValidity] = useState("");
     const [isValid, setIsValid] = useState(true);
 
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         setMessage(e.target.value);
 
         if (e.target.value.length < 10) {
-            e.target.setCustomValidity("Message should be at least 10 characters");
+            setCustomValidity("El mensaje debe tener al menos 10 caracteres.");
             setIsValid(false);
         } else {
-            e.target.setCustomValidity("");
+            setCustomValidity("");
             setIsValid(true);
         }
     }
@@ -32,9 +33,9 @@ export default function FormTextarea({ label, name, placeholder, value }: Textar
             <Label htmlFor={name}>{label}</Label>
             <Textarea
                 className={!isValid ? (
-                    "border-slate-500 border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20"
+                    "border-slate-500 bg-white border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20"
                 ) : (
-                    "border-slate-500 focus-visible:border-primary focus-visible:ring-primary/20"
+                    "border-slate-500 bg-white focus-visible:border-primary focus-visible:ring-primary/20"
                 )}
                 placeholder={placeholder}
                 defaultValue={message}
@@ -43,7 +44,7 @@ export default function FormTextarea({ label, name, placeholder, value }: Textar
             />
             {!isValid && (
                 <p className="mt-2 text-xs text-destructive" role="alert" aria-live="polite">
-                    Message should be at least 10 characters
+                    {customValidity}
                 </p>
             )}
         </div>

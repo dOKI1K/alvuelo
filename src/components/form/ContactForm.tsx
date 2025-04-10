@@ -2,6 +2,7 @@ import { useState } from "react";
 import FormInput from "./FormInput";
 import FormTextarea from "./FormTextarea";
 import { motion } from "motion/react";
+import image22 from "../../assets/img/PNG/22.png";
 
 export default function ContactForm({ color }: { color?: string }) {
     const [formData, setFormData] = useState({
@@ -34,8 +35,9 @@ export default function ContactForm({ color }: { color?: string }) {
                 viewport={{ once: true }}
                 layout
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="container flex flex-col p-4 mx-auto bg-white md:flex-row font-poppins">
+                className="container flex flex-col p-4 mx-auto md:flex-row font-poppins bg-[#ff9100]">
                 <form onSubmit={handleSubmit} className="flex flex-col w-full gap-y-5">
+                    <h1>Mandanos tu consulta</h1>
                     <FormInput type="text" name="name" value={formData.name} onChange={handleChange} label="Nombre" />
                     <FormInput type="text" name="email" value={formData.email} onChange={handleChange} label="Email" icon />
                     <FormInput type="text" name="institution" value={formData.institution} onChange={handleChange} label="Institución" />
@@ -43,7 +45,7 @@ export default function ContactForm({ color }: { color?: string }) {
                     <button className={`w-full py-3 text-white bg-blue-500 rounded-md ${color}`} type="submit">Enviar</button>
                 </form>
                 <div className="w-full">
-
+                    <img src={image22} alt="Al Vuelo" className="h-[70vh] bg-orange-500 w-fit mx-auto" />
                 </div>
             </motion.div>
         </section>
