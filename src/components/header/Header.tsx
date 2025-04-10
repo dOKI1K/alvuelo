@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/img/logos/logo.png";
 
 export default function Header() {
     return (
@@ -13,9 +13,9 @@ export default function Header() {
             // Style now supports indepedent transforms:
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="container sticky top-0 z-50 flex flex-row items-center justify-between w-full px-4 py-4 mx-auto bg-white lg:px-0">
-            {logo}
-            <h1 className="text-3xl font-bold font-syne">Al vuelo</h1>
-            <ul className="flex-row hidden md:flex gap-x-4 font-poppins">
+            <img src={logo} alt="Al Vuelo" className="w-48" />
+            {/* <h1 className="text-3xl font-bold font-syne">Al vuelo</h1> */}
+            <ul className="flex-row hidden px-2 md:flex gap-x-4 font-poppins">
                 <li><a href="#" className="">Home</a></li>
                 <li><a href="#" className="">About</a></li>
                 <li><a href="#" className="">Services</a></li>

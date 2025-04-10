@@ -3,7 +3,7 @@ import FormInput from "./FormInput";
 import FormTextarea from "./FormTextarea";
 import { motion } from "motion/react";
 
-export default function ContactForm() {
+export default function ContactForm({ color }: { color?: string }) {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -26,7 +26,7 @@ export default function ContactForm() {
     return (
         <section>
             <div className="container w-full px-4 py-4 mx-auto lg:px-0 font-poppins">
-                <h2 className="text-xl font-bold text-white  font-syne">Contactanos</h2>
+                <h2 className="text-xl font-bold text-white font-syne">Contactanos</h2>
             </div>
             <motion.div
                 initial={{ x: -150, opacity: 0 }}
@@ -40,7 +40,7 @@ export default function ContactForm() {
                     <FormInput type="text" name="email" value={formData.email} onChange={handleChange} label="Email" icon />
                     <FormInput type="text" name="institution" value={formData.institution} onChange={handleChange} label="Institución" />
                     <FormTextarea name="message" label="Mensaje" />
-                    <button className="w-full py-3 text-white bg-blue-500 rounded-md" type="submit">Enviar</button>
+                    <button className={`w-full py-3 text-white bg-blue-500 rounded-md ${color}`} type="submit">Enviar</button>
                 </form>
                 <div className="w-full">
 

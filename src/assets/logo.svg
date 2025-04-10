@@ -2,6 +2,7 @@
 <svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 811.82 202.41">
   <defs>
     <style>
+    @import url('https://fonts.cdnfonts.com/css/avenir');
       .cls-1 {
         letter-spacing: -.09em;
       }
@@ -27,7 +28,7 @@
       }
 
       .cls-12, .cls-14 {
-        font-family: AvenirLT-Black, 'Avenir LT 65 Medium';
+        font-family: AvenirLT-Black, 'Avenir LT 65 Medium', 'Avenir', Avenir;
         font-size: 160.49px;
         font-weight: 800;
       }

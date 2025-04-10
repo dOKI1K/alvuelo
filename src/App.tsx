@@ -15,7 +15,7 @@ function App() {
 
                 <Body />
 
-                <ContactForm />
+                <ContactForm color='bg-orange-500' />
 
                 <Footer year={new Date().getFullYear()} />
             </div>
