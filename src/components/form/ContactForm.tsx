@@ -2,7 +2,7 @@ import { useState } from "react";
 import FormInput from "./FormInput";
 import FormTextarea from "./FormTextarea";
 import { motion } from "motion/react";
-import image22 from "../../assets/img/PNG/22.png";
+import image2 from "../../assets/img/2.jpeg";
 
 export default function ContactForm({ color }: { color?: string }) {
     const [formData, setFormData] = useState({
@@ -25,9 +25,10 @@ export default function ContactForm({ color }: { color?: string }) {
     }
 
     return (
-        <section className="mr-1">
+        <section className="mx-1">
             <div className="container w-full px-4 py-4 mx-auto lg:px-0 font-poppins">
-                <h2 className="text-2xl font-bold text-center text-[#ff9100] font-poppins">Contactanos</h2>
+                <p className="mb-3 font-bold text-center font-poppins">...</p>
+                <h2 className="text-2xl font-bold text-center text-white font-poppins">Contactanos</h2>
             </div>
             <motion.div
                 initial={{ x: -150, opacity: 0 }}
@@ -43,12 +44,12 @@ export default function ContactForm({ color }: { color?: string }) {
                         <FormInput type="text" name="name" value={formData.name} onChange={handleChange} label="Nombre" placeholder="Alejandro García" />
                         <FormInput type="text" name="email" value={formData.email} onChange={handleChange} label="Email" icon placeholder="alegarcia@gmail.com" />
                         <FormInput type="text" name="institution" value={formData.institution} onChange={handleChange} label="Institución" placeholder="Mecanica Ivon" />
-                        <FormTextarea name="message" label="Mensaje" placeholder="Hola buena, estoy interesado en..." />
-                        <button className={`w-full py-3 text-white bg-[#ff9100] hover:bg-orange-500 transition-colors ease-in-out rounded-md ${color}`} type="submit">Enviar</button>
+                        <FormTextarea name="message" label="Mensaje" placeholder="Hola, estoy interesado en..." />
+                        <button className={`w-full py-3 text-white bg-primary hover:bg-secondary transition-colors ease-in-out rounded-md ${color}`} type="submit">Enviar</button>
                     </form>
                 </div>
                 <div className="">
-                    <img src={image22} alt="Al Vuelo" className="h-[80vh] mx-auto bg-orange-500 justify-around w-[50vw]" />
+                    <img src={image2} alt="Al Vuelo" className="h-[80vh] mx-auto bg-secondary justify-around w-[50vw]" />
                 </div>
             </motion.div>
         </section>

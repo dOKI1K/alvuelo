@@ -1,4 +1,14 @@
+import { text } from 'stream/consumers';
+
 /** @type {import('tailwindcss').Config} */
+const siteColors = {
+	'primary': '#161559',
+	'secondary': '#0071BC',
+	'success': '#198754',
+	'danger': '#dc3545',
+	'warning': '#ffc107',
+};
+
 export default {
 	darkMode: ["class"],
 	content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
@@ -49,7 +59,8 @@ export default {
 					'3': 'hsl(var(--chart-3))',
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))'
-				}
+				},
+				siteColors
 			},
 			fontFamily: {
 				'syne': ['Syne', 'sans-serif'],
@@ -57,7 +68,9 @@ export default {
 				'poppins': ['Poppins', 'sans-serif'],
 				'montserrat': ['Montserrat', 'sans-serif'],
 				'geist': ['Geist Mono', 'sans-serif'],
-			}
+			},
+			backgroundColor: siteColors,
+			textColor: siteColors,
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

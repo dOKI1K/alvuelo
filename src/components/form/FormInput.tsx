@@ -16,7 +16,7 @@ interface FormInputProps {
 export default function FormInput({ label, name, type, placeholder, value, icon, onChange }: FormInputProps) {
     return (
         <div className="space-y-2">
-            <Label htmlFor={name} className="font-semibold text-[#ff9100]">{label}</Label>
+            <Label htmlFor={name} className="font-semibold text-primary">{label}</Label>
             <div className="relative">
                 <Input id={name} name={name} type={type} placeholder={placeholder} value={value} className={`border-slate-500 bg-white focus-visible:outline-none focus-visible:ring-0 ${icon ? "peer ps-9" : ""}`} onChange={onChange} />
 

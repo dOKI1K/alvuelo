@@ -1,5 +1,5 @@
 import { BiLogoFacebookCircle, BiLogoGithub, BiLogoLinkedin, BiLogoInstagram } from "react-icons/bi"
-import logo from "../../assets/img/logos/logo.png";
+import logo from "../../assets/img/favicon.svg";
 // import { motion } from "motion/react"
 
 interface FooterProps {
@@ -20,7 +20,7 @@ export default function Footer({ year }: FooterProps) {
 
                 <div className="flex flex-col mx-auto text-center gap-y-5 ">
                     <a href="mailto:brand@mail.com" className="text-sm text-gray-500">contacto@alvuelo.com</a>
-                    <div className="flex flex-row text-[#ff9100]">
+                    <div className="flex flex-row text-secondary">
                         <a href="#" target="_blank"
                             className="p-2 transition-colors bg-white rounded-full hover:text-white hover:bg-gray-500">
                             <BiLogoFacebookCircle size={40} />

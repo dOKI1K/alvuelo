@@ -9,7 +9,7 @@ function App() {
     // const [date, setDate] = useState<Date | undefined>(new Date())
 
     return (
-        <div className="bg-gradient-to-r from-slate-300 to-gray-300">
+        <div className="scroll-smooth bg-gradient-to-r from-[#161559] to-[#0071BC]">
             <div className='w-full'>
                 <Header />
 
