@@ -1,4 +1,5 @@
 import { BiLogoFacebookCircle, BiLogoGithub, BiLogoLinkedin, BiLogoInstagram } from "react-icons/bi"
+import logo from "../../assets/img/logos/logo.png";
 // import { motion } from "motion/react"
 
 interface FooterProps {
@@ -10,16 +11,16 @@ export default function Footer({ year }: FooterProps) {
     return (
         <footer className="w-full mt-10 bg-white font-poppins">
             <div className="container grid items-center grid-cols-1 gap-10 px-4 pt-10 mx-auto md:grid-cols-2 lg:px-0 pb-28">
-                <div className="flex flex-col items-start gap-y-5">
-                    <h1 className="text-3xl font-bold font-syne">Al vuelo</h1>
-                    <p className="text-sm text-gray-500">Proveemos soluciones integrales de importación, garantizando rapidez,
+                <div className="flex flex-col items-start px-4 gap-y-5">
+                    <img src={logo} alt="Al Vuelo" className="w-48" />
+                    <p className="text-sm text-gray-500 text-balance">Proveemos soluciones integrales de importación, garantizando rapidez,
                         seguridad y adaptabilidad a las necesidades de nuestros clientes, contribuyendo al desarrollo económico
                         de Argentina.</p>
                 </div>
 
                 <div className="flex flex-col mx-auto text-center gap-y-5 ">
-                    <a href="mailto:brand@mail.com" className="text-sm text-gray-500">brand@mail.com</a>
-                    <div className="flex flex-row">
+                    <a href="mailto:brand@mail.com" className="text-sm text-gray-500">contacto@alvuelo.com</a>
+                    <div className="flex flex-row text-[#ff9100]">
                         <a href="#" target="_blank"
                             className="p-2 transition-colors bg-white rounded-full hover:text-white hover:bg-gray-500">
                             <BiLogoFacebookCircle size={40} />

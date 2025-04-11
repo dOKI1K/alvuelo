@@ -30,12 +30,12 @@ export default function FormTextarea({ label, name, placeholder, value }: Textar
 
     return (
         <div className="space-y-2">
-            <Label htmlFor={name}>{label}</Label>
+            <Label htmlFor={name} className="font-semibold text-[#ff9100]">{label}</Label>
             <Textarea
                 className={!isValid ? (
-                    "border-slate-500 bg-white border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20"
+                    "min-h-[100px] border-slate-500 bg-white border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20"
                 ) : (
-                    "border-slate-500 bg-white focus-visible:border-primary focus-visible:ring-primary/20"
+                    "min-h-[100px] border-slate-500 bg-white focus-visible:border-primary focus-visible:ring-primary/20"
                 )}
                 placeholder={placeholder}
                 defaultValue={message}

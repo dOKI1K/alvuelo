@@ -10,7 +10,7 @@ export default function Body() {
     return (
         <section className="container w-full px-4 py-4 mx-auto lg:px-0 font-poppins">
             <article className="bg-[#ff9100] flex flex-col md:flex-row mb-4 mr-1">
-                <div className="flex flex-col justify-center w-full h-[70vh] bg-white ">
+                <div className="flex flex-col justify-center w-full h-[70vh] bg-white p-7">
                     <img src={icon} alt="Al Vuelo" className="mb-4 w-28" />
                     <p className="flex-wrap mt-2 text-sm text-balance">Proveemos soluciones integrales de importación, garantizando rapidez, seguridad y adaptabilidad a las necesidades de nuestros clientes, contribuyendo al desarrollo económico de Argentina.</p>
                     <div className="flex flex-col items-center w-full mt-4 md:flex-row gap-x-2">
@@ -18,11 +18,11 @@ export default function Body() {
                         <a href="#" className="px-4 py-2 text-lg font-semibold border border-gray-400 rounded-md">Ver Servicios</a>
                     </div>
                 </div>
-                <img src={image16} alt="Al Vuelo" className="h-[70vh] bg-orange-500" />
+                <img src={image16} alt="Al Vuelo" className="h-[70vh] w-[45vw] bg-orange-500" />
             </article>
 
             <article className="mr-1">
-                <div className="flex flex-col mb-4 shadow-md md:flex-row shadow-gray-400">
+                <div className="flex flex-col mb-4 shadow-md md:flex-row">
                     <div className="w-full font-semibold text-center text-white bg-[#ff9100] p-7"><h3>Tenes consultas? Llamanos</h3></div>
                     <div className="w-full text-xl font-bold text-center bg-white p-7"><h3>0800 555 12025</h3></div>
                 </div>
@@ -36,8 +36,8 @@ export default function Body() {
 
             <article className="mb-4 mr-1">
                 <div>
-                    <p className="mb-3 text-center">...</p>
-                    <h2 className="mb-4 text-2xl font-bold text-[#ff9100] font-syne text-center">Nuestros Servicios</h2>
+                    <p className="mb-3 font-bold text-center font-poppins">...</p>
+                    <h2 className="mb-4 text-2xl font-bold text-center font-poppins"><span className="text-[#ff9100]">Nuestros</span> Servicios</h2>
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
                         <Service icon={HiDocumentCheck} title="Gestión Aduanera" description="Tramitación de documentos aduaneros, pagos de aranceles e impuestos y resolución de problemas relacionados con la aduana." />
                         <Service icon={HiTruck} title="Logística Internacional" description="Coordinación del transporte de mercancías por vía marítima, aérea o terrestre, asegurando entregas en tiempo y forma." />
