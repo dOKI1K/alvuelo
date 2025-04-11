@@ -12,7 +12,7 @@ export default function Footer({ year }: FooterProps) {
         <footer className="w-full mt-10 bg-white font-poppins">
             <div className="container grid items-center grid-cols-1 gap-10 px-4 pt-10 mx-auto md:grid-cols-2 lg:px-0 pb-28">
                 <div className="flex flex-col items-start px-4 gap-y-5">
-                    <img src={logo} alt="Al Vuelo" className="w-48" />
+                    <img src={logo} alt="Al Vuelo" className="w-32" />
                     <p className="text-sm text-gray-500 text-balance">Proveemos soluciones integrales de importación, garantizando rapidez,
                         seguridad y adaptabilidad a las necesidades de nuestros clientes, contribuyendo al desarrollo económico
                         de Argentina.</p>
