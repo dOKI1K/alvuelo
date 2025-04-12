@@ -56,7 +56,7 @@ export default function Body() {
                     <div className="w-full text-xl font-bold text-center text-white bg-primary p-7"><h3>0800 555 12025</h3></div>
                 </div>
 
-                <div className="flex flex-col gap-4 mb-4 md:flex-row">
+                <div className="grid grid-cols-1 gap-4 mb-4 lg:grid-cols-3">
                     <img src={image1} alt="Al Vuelo" className="w-full h-[70vh] bg-orange-500" />
                     <img src={image2} alt="Al Vuelo" className="w-full h-[70vh] bg-orange-500" />
                     <img src={image3} alt="Al Vuelo" className="w-full h-[70vh] bg-orange-500" />
