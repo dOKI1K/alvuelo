@@ -48,7 +48,7 @@ export default function ContactForm({ color }: { color?: string }) {
                     </form>
                 </div>
                 <div className="">
-                    <img src={image22} alt="Al Vuelo" className="h-[80vh] mx-auto bg-orange-500 justify-around w-[50vw]" />
+                    <img src={image22} alt="Al Vuelo" className="h-[75vh] mx-auto bg-orange-500 justify-around w-[50vw]" />
                 </div>
             </motion.div>
         </section>

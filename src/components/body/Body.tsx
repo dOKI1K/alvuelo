@@ -21,16 +21,16 @@ export default function Body() {
                 <img src={image16} alt="Al Vuelo" className="h-[70vh] w-[45vw] bg-orange-500" />
             </article>
 
-            <article className="mr-1">
+            <article className="">
                 <div className="flex flex-col mb-4 shadow-md md:flex-row">
                     <div className="w-full font-semibold text-center text-white bg-[#ff9100] p-7"><h3>Tenes consultas? Llamanos</h3></div>
                     <div className="w-full text-xl font-bold text-center bg-white p-7"><h3>0800 555 12025</h3></div>
                 </div>
 
-                <div className="flex flex-col gap-4 mb-4 md:flex-row">
-                    <img src={image6} alt="Al Vuelo" className="w-full h-[70vh] bg-orange-500" />
-                    <img src={image19} alt="Al Vuelo" className="w-full h-[70vh] bg-orange-500" />
-                    <img src={image17} alt="Al Vuelo" className="w-full h-[70vh] bg-orange-500" />
+                <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+                    <img src={image6} alt="Al Vuelo" className="w-full h-[65vh] bg-orange-500" />
+                    <img src={image19} alt="Al Vuelo" className="w-full h-[65vh] bg-orange-500" />
+                    <img src={image17} alt="Al Vuelo" className="w-full h-[65vh] bg-orange-500" />
                 </div>
             </article>
 
