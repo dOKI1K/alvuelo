@@ -21,23 +21,23 @@ export default function Body() {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
 
                 className="flex flex-col mb-4 mr-1 bg-white md:flex-row">
-                <div className="flex flex-col justify-center w-full h-[70vh] bg-white p-7">
+                <div className="flex flex-col justify-center w-full lg:h-[70vh] bg-white p-7">
                     <div>
                         <img src={icon} alt="Al Vuelo" className="mb-4 w-28" />
                         <h1 className="text-3xl font-geist">FlyGo</h1>
                     </div>
                     <p className="flex-wrap mt-2 text-sm text-balance">Proveemos soluciones integrales de importación, garantizando rapidez, seguridad y adaptabilidad a las necesidades de nuestros clientes, contribuyendo al desarrollo económico de Argentina.</p>
-                    <div className="flex flex-col items-center w-full mt-4 md:flex-row gap-x-2">
-                        <a href="#" className="px-4 py-2 text-lg font-semibold text-white transition-colors ease-in-out delay-100 rounded-md bg-primary hover:bg-secondary">Contáctanos</a>
-                        <a href="#" className="px-4 py-2 text-lg font-semibold border border-gray-400 rounded-md">Conocé más</a>
+                    <div className="flex flex-col items-center w-full gap-2 mt-4 md:flex-row">
+                        <a href="#contact" className="w-full px-4 py-2 text-lg font-semibold text-center text-white transition-colors ease-in-out delay-100 rounded-md md:w-fit bg-primary hover:bg-secondary">Contáctanos</a>
+                        <a href="#us" className="w-full px-4 py-2 text-lg font-semibold text-center border border-gray-400 rounded-md md:w-fit">Conocé más</a>
                     </div>
                 </div>
-                <img src={image3} alt="Al Vuelo" className="h-[70vh] w-[40vw] bg-orange-500" />
+                <img src={image3} alt="Al Vuelo" className="lg:max-w-none md:w-[40vw] w-full h-full lg:h-[70vh]" />
             </motion.div>
 
 
 
-            <article className="flex flex-col w-full my-4 mr-1 md:flex-row">
+            <article className="flex flex-col w-full my-4 mr-1 md:flex-row" id="deposit">
                 <img src={deposito} alt="FlyGo - Depósito" className="w-full md:w-1/2" />
                 <div className="w-full mr-1 bg-white font-poppins p-7">
                     <h1 className="mb-2 text-2xl font-bold text-primary">Nuestro Depósito:</h1>
@@ -50,7 +50,7 @@ export default function Body() {
                 </div>
             </article>
 
-            <article className="mr-1">
+            <article className="mr-1" id="us">
                 <div className="flex flex-col mb-4 shadow-md md:flex-row">
                     <div className="w-full font-semibold text-center bg-white text-siteColors-primary p-7"><h3>Tenes consultas? Llamanos</h3></div>
                     <div className="w-full text-xl font-bold text-center text-white bg-primary p-7"><h3>0800 555 12025</h3></div>
@@ -59,7 +59,7 @@ export default function Body() {
                 <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2 lg:grid-cols-3">
                     <img src={image1} alt="Al Vuelo" className="max-w-[500px] lg:max-w-none w-full h-full lg:h-[70vh]" />
                     <img src={image2} alt="Al Vuelo" className="max-w-[500px] lg:max-w-none w-full h-full lg:h-[70vh]" />
-                    <img src={image3} alt="Al Vuelo" className="max-w-[500px] lg:max-w-none w-full h-full lg:h-[70vh]" />
+                    <img src={image3} alt="Al Vuelo" className="max-w-[500px] lg:max-w-none w-full h-full lg:h-[70vh] block md:hidden lg:block" />
                 </div>
             </article>
 
@@ -67,7 +67,7 @@ export default function Body() {
                 <div>
                     <p className="mb-3 font-bold text-center font-poppins">...</p>
                     <h2 className="mb-4 text-2xl font-bold text-center font-poppins"><span className="text-white">Nuestro</span> Compromiso</h2>
-                    <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 my-14">
+                    <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 my-7">
                         <Service icon={HiHeart} title="Confiabilidad" description="Trabajamos con los estándares más altos de seguridad y transparencia." />
                         <Service icon={HiArrowPath} title="Innovación" description="Nos adaptamos a los cambios del mercado global para ofrecerte lo mejor." />
                         <Service icon={HiBriefcase} title="Compromiso" description="Nos dedicamos a facilitar tu negocio, haciéndote llegar lo que necesitas sin complicaciones." />

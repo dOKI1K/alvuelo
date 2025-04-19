@@ -8,9 +8,9 @@ interface ServiceProps {
 
 export default function Service({ icon: Icon, title, description }: ServiceProps) {
     return (
-        <div className="">
+        <div className="bg-cyan-600 p-7">
             {Icon && <Icon className="mx-auto text-white" size={60} color="#f1f1f1" />}
-            <h3 className="my-2 font-semibold text-center font-poppins md:text-white">{title}</h3>
+            <h3 className="my-2 font-semibold text-center font-poppins">{title}</h3>
             <p className="text-sm text-center text-white text-balance">{description}</p>
         </div>
     )
