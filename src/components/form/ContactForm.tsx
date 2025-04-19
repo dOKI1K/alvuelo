@@ -36,7 +36,7 @@ export default function ContactForm({ color }: { color?: string }) {
                 layout
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="container flex flex-col mx-auto bg-white md:flex-row font-poppins">
-                <div className="flex flex-col w-full py-4">
+                <div className="flex flex-col w-full py-7" id="contact">
                     <h2 className="text-xl font-semibold text-center font-poppins">Mandanos tu consulta</h2>
                     <p className="text-sm text-center text-gray-500">Vamos a estar en contacto lo más rapido posible</p>
                     <form onSubmit={handleSubmit} className="flex flex-col w-full py-4 px-7 gap-y-5 ">
@@ -48,7 +48,7 @@ export default function ContactForm({ color }: { color?: string }) {
                     </form>
                 </div>
                 <div className="">
-                    <img src={image22} alt="Al Vuelo" className="h-[75vh] mx-auto bg-orange-500 justify-around w-[50vw]" />
+                    <img src={image22} alt="Al Vuelo" className="justify-around h-full mx-auto bg-orange-500" />
                 </div>
             </motion.div>
         </section>
