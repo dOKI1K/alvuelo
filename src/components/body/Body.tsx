@@ -56,10 +56,10 @@ export default function Body() {
                     <div className="w-full text-xl font-bold text-center text-white bg-primary p-7"><h3>0800 555 12025</h3></div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-4 mb-4 lg:grid-cols-3">
-                    <img src={image1} alt="Al Vuelo" className="w-full h-[70vh] bg-orange-500" />
-                    <img src={image2} alt="Al Vuelo" className="w-full h-[70vh] bg-orange-500" />
-                    <img src={image3} alt="Al Vuelo" className="w-full h-[70vh] bg-orange-500" />
+                <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2 lg:grid-cols-3">
+                    <img src={image1} alt="Al Vuelo" className="max-w-[500px] lg:max-w-none w-full h-full lg:h-[70vh]" />
+                    <img src={image2} alt="Al Vuelo" className="max-w-[500px] lg:max-w-none w-full h-full lg:h-[70vh]" />
+                    <img src={image3} alt="Al Vuelo" className="max-w-[500px] lg:max-w-none w-full h-full lg:h-[70vh]" />
                 </div>
             </article>
 
